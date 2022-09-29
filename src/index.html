@@ -9,74 +9,192 @@
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 
     <style>
-        ul.nav {
-            margin-left: 0px;
-            padding-left: 0px;
-            list-style: none;
+        /* fonts*/
+        @font-face {
+            font-family: 'Barlow Semi Condensed';
+            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf) format('truetype');
+            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Black.ttf) format('truetype');
+            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf) format('truetype');
+            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf) format('truetype');
+            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Bold.ttf) format('truetype');
+            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-ExtraBold.ttf) format('truetype');
+            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf) format('truetype');
+
         }
 
-        .nav li {
+        @font-face {
+            font-family: 'Poppins';
+            src: url(fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+            src: url(fonts/Poppins/Poppins-Black.ttf) format('truetype');
+            src: url(fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+            src: url(fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+            src: url(fonts/Poppins/Poppins-ExtraBold.ttf) format('truetype');
+            src: url(fonts/Poppins/Poppins-Light.ttf) format('truetype');
+            src: url(fonts/Poppins/Poppins-ExtraLight.ttf) format('truetype');
+            src: url(fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+            src: url(fonts/Poppins/Poppins-Thin.ttf) format('truetype');
+        }
+
+        /* banner */
+        .banner {
+            display: flex;
+            width: 100%;
+            height: auto;
+
+        }
+
+        /* headings */
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Barlow Semi Condensed';
+            font-weight: 900;
+            float: left;
+            font-size: 18pt;
+
+        }
+
+        h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-weight: normal;
+            font-family: 'Barlow Semi Condensed';
+            font-size: 20pt;
+        }
+
+        h3 {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+        }
+
+        h4 {
+            text-align: center;
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+        }
+
+        h5 {
+            text-align: center;
+            text-transform: uppercase;
+            color: rgb(196, 146, 91);
+            font-weight: bold;
+        }
+
+        /* navigation */
+
+        .home {
+            display: flex;
+            position: fixed;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 70px;
+            background-color: rgb(20, 27, 37);
+            opacity: 1;
+            border-bottom: 15px;
+            justify-content: center;
+        }
+
+        .logo {
+            float: left;
+            padding: 10 px 20px;
+            display: inline-block;
+            background-color: rgb(20, 27, 37);
+            justify-content: center;
+            opacity: 1;
+
+
+        }
+
+        .navigation {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 0;
+            opacity: 1;
+        }
+
+        .navigation li {
             float: left;
         }
 
-        ul.nav a {
-            display: block;
-            width: 5em;
-            padding: 10px;
-            margin: 0 5px;
-            background-color: #f4f4f4;
-            border: 1px dashed #333;
-            text-decoration: none;
-            color: #333;
+        .navigation a {
+            display: inline-block;
+            /* width: 5em; */
+            padding: 10px 20px;
+            background-color: rgb(20, 27, 37) opacity: 0, 9;
+            opacity: 1;
+            border-bottom: 15px black;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: rgb(235, 232, 222);
             text-align: center;
+            text-decoration: none;
+            font-family: 'Barlow Semi Condensed';
         }
 
-        ul.nav a:hover {
-            background-color: #333;
-            color: #f4f4f4;
+        .navigation a:hover {
+            background-color: rgb(20, 27, 37);
+            opacity: 1;
+            color: rgb(196, 146, 91);
+        }
+
+        /* services */
+        .service {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+        }
+
+        .col1 {
+            width: 25%;
+            height: 100%;
+            background-color: rgb(196, 146, 91);
+            color: rgb(235, 232, 222);
+            justify-content: center;
+            align-items: center;
+            border: 0px;
+            float: left;
+        }
+
+        .col2 {
+            width: 25%;
+            height: 100%;
+            background-color: rgb(183, 134, 73);
+            justify-content: center;
+            align-items: center;
+            border: 0px;
+            color: white;
+            float: left;
+        }
+
+        .description-service {
+            text-align: center;
+            color: rgb(235, 232, 222);
+            font-family: 'Poppins';
+            font-weight: normal;
+            float: left;
+            font-size: 14pt;
         }
     </style>
-
 </head>
 
 <body>
 
-    <style>
-        ul.nav {
-            margin-left: 300px;
-            padding-left: 300px;
-            list-style: none;
-
-        }
-
-        .nav li {
-            float: left;
-        }
-
-        ul.nav a {
-            display: block;
-            width: 5em;
-            padding: 10px;
-            margin: 0 5px;
-            background-color: rgb(20, 27, 37);
-            opacity: 0, 6;
-            border: 0px dashed black;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        ul.nav a:hover {
-            background-color: rgb(20, 27, 37);
-            color: rgb(196, 146, 91);
-        }
-    </style>
-    </head>
-
-    <body>
-        <ul class="nav">
+    <!-- Main menu and banner -->
+    <div class="home">
+        <div class="logo">
+            <h1>Barbershop</h1>
+        </div>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Pricing</a></li>
@@ -85,10 +203,41 @@
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </body>
+    </div>
 
-</html>
+    <div class="banner"> <img src="images/banner.jpeg" alt="Barbershop">
+    </div>
 
+    <!-- Services -->
+    <div class="service">
+        <div class="col1 col11">
+            <h2>Hair styles</h2>
+            <div class="description-service">
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts.
+            </div>
+        </div>
+        <div class="col2 col21">
+            <h2>Beard trim</h2>
+            <div class="description-service">
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts.
+            </div>
+        </div>
+        <div class="col1 col13">
+            <h2>Hot shave</h2>
+            <div class="description-service">
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts.
+            </div>
+        </div>
+        <div class="col2 col22">
+            <h2>Hair shampoo</h2>
+            <div class="description-service">
+                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country, in which roasted parts.
+            </div>
+        </div>
 </body>
 
 </html>
