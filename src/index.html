@@ -72,16 +72,18 @@
         }
 
         h4 {
-            text-align: center;
+            font-family: 'Barlow Semi Condensed';
+            font-size: 16pt;
             text-transform: uppercase;
-            color: black;
+            color: rgb(196, 146, 91);
             font-weight: bold;
         }
 
         h5 {
-            text-align: center;
+            font-family: 'Barlow Semi Condensed';
+            font-size: 20pt;
             text-transform: uppercase;
-            color: rgb(196, 146, 91);
+            color: black;
             font-weight: bold;
         }
 
@@ -93,8 +95,8 @@
             width: 100%;
             height: 70px;
             background-color: rgb(20, 27, 37);
-            opacity: 0, 2;
-            filter: alpha(opacity=20);
+            /*opacity: 0, 2;
+            filter: alpha(opacity=20);*/
             border-bottom: 15px;
             border-bottom-color: rgb(20, 27, 37);
             justify-content: center;
@@ -130,8 +132,8 @@
             /* width: 5em; */
             padding: 10px 20px;
             background-color: rgb(20, 27, 37) opacity: 0, 9;
-            /*filter: alpha(opacity=80);
-            opacity: 0, 8;*/
+            filter: alpha(opacity=20);
+            opacity: 0, 2;
             border-bottom: 15px black;
             text-transform: uppercase;
             font-weight: normal;
@@ -141,7 +143,7 @@
             font-family: 'Barlow Semi Condensed';
         }
 
-        .navigation a:hover {
+        */ .navigation a:hover {
             background-color: rgb(20, 27, 37);
             /*filter: alpha(opacity=80);
             opacity: 0, 8;*/
@@ -152,7 +154,7 @@
         .service {
             display: flex;
             align-items: center;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             width: 100%;
             height: 100%;
             justify-content: center;
@@ -189,6 +191,31 @@
             font-weight: normal;
             float: left;
             font-size: 14pt;
+        }
+
+        /* about barber*/
+        .about {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 100%;
+            justify-content: left;
+            align-items: center;
+            gap: 50pxpx;
+        }
+
+        .col3 {
+            width: 30%;
+            border: 0px;
+            float: left;
+        }
+
+        .col4 {
+            width: 50%;
+            border: 0px;
+            float: left;
+            justify-content: left;
         }
     </style>
 </head>
@@ -242,6 +269,26 @@
             <div class="description-service">
                 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
                 paradisematic country, in which roasted parts.
+            </div>
+        </div>
+
+        <!-- About barber -->
+        <div class="about">
+            <div class="col3">
+                <img src="images/about.jpeg" alt="About barbershop">
+            </div>
+            <div class="col4">
+                <h4 align="left">About barber</h4>
+                <h5 align="left">A smooth barber <br /> experience in your town</h5>
+                <div>
+                    <p align="left">
+                        Far far away, behind the word mountains, far from the countries Vakalia and Consonantia, there
+                        live the blinds texts. Separated they live in Bookmarksgrove right at the coast of the
+                        Semantics, a large language ocean. A small river named Duden flows by their place and supplies
+                        it with the necessary regelialia.
+                    </p>
+                    <div></div>
+                </div>
             </div>
         </div>
 </body>
