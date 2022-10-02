@@ -37,7 +37,7 @@
             text-align: center;
             text-transform: uppercase;
             color: white;
-            font-weight: 500;
+            font-weight: 600;
             font-family: 'Barlow Semi Condensed', sans-serif;
             font-size: 22pt;
         }
@@ -51,7 +51,7 @@
 
         h4 {
             font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 20pt;
+            font-size: 18pt;
             text-transform: uppercase;
             color: rgb(196, 146, 91);
             font-weight: 600;
@@ -59,28 +59,28 @@
 
         h5 {
             font-family: 'Barlow Semi Condensed', sans-serif;
-            font-size: 36pt;
+            font-size: 34pt;
             text-transform: uppercase;
             color: black;
-            font-weight: 900;
+            font-weight: 800;
         }
 
         /* header and navigation */
         #header {
             display: flex;
             position: fixed;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             width: 100%;
             height: 90px;
             background-color: rgb(20, 27, 37);
             opacity: 0.8;
-            justify-content: center;
+            /*justify-content: center;*/
         }
 
         .logo {
             float: left;
             width: 50%;
-            padding: 4px 20px;
+            padding: 4px 34px;
             display: inline-block;
             background-color: rgb(20, 27, 37);
             justify-content: center;
@@ -98,7 +98,7 @@
 
         .navigation a {
             display: inline-block;
-            /*width: em;*/
+            width: 100%;
             padding: 15px 20px;
             background-color: rgb(20, 27, 37);
             opacity: 1;
@@ -119,12 +119,22 @@
         /* services */
 
         .service-images {
-            /*display: flex;*/
-
-            flex-wrap: nowrap;
+            display: flex;
+            position: absolute;
+            margin: 50px;
             width: 100%;
-            /*height: 90px;*/
-            justify-content: center;
+            height: 250px;
+            top: 640px;
+
+        }
+
+        .each-image {
+            display: flex;
+            position: relative;
+            padding: 0px 4px;
+            flex-wrap: wrap;
+            float: left;
+            width: 25%;
         }
 
         .service {
@@ -144,8 +154,6 @@
             background-color: rgb(196, 146, 91);
             color: rgb(235, 232, 222);
             justify-content: center;
-            align-items: center;
-            border: 0px;
             float: left;
         }
 
@@ -154,14 +162,12 @@
             height: 500px;
             background-color: rgb(183, 134, 73);
             justify-content: center;
-            align-items: center;
-            border: 0px;
             color: white;
             float: left;
         }
 
         .service-description {
-            padding: 90px 18px 10px;
+            padding: 130px 18px 10px;
             text-align: center;
             color: rgb(235, 232, 222);
             font-family: 'Poppins', sans-serif;
@@ -174,23 +180,28 @@
             display: flex;
             flex-wrap: wrap;
             width: 100%;
-            height: 100%;
-            gap: 50px;
+            height: 80%;
+            gap: 260px;
             background-color: white;
+            float: none;
         }
 
         .img {
-            width: 30%;
-            border: 0px;
-            float: left;
-            justify-content: left;
+            width: 28%;
+            float: right;
+            left: 20px;
         }
 
         .description-about {
-            width: 30%;
-            border: 0px;
+            width: 40%;
             float: left;
             justify-content: left;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(20, 27, 37);
+            font-weight: 200;
+            font-size: 18pt;
+            line-height: 1, 5em;
         }
 
         /* Testimonial */
@@ -210,63 +221,80 @@
 <body>
 
     <!-- Main menu and banner -->
-    <div id="header">
-        <div class="logo">
-            <h1>Barbershop</h1>
+    <div class="container">
+        <div id="header">
+            <div class="logo">
+                <h1>Barbershop</h1>
+            </div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
-        <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
 
-    <div class="banner"> <img src="images/banner.jpeg" alt="Barbershop" width="100%" height="100%">
-    </div>
+        <div class="banner"> <img src="images/banner.jpeg" alt="Barbershop" width="100%" height="100%">
+        </div>
 
-    <!-- Services -->
-    <div class="service-images">
-        <img src="images/styling.png" alt="styling">
-        <img src="images/trimming.png" alt="trimming">
-        <img src="images/shaving.png" alt="shaving">
-        <img src="images/washing.png" alt="washing">
-    </div>
+        <!-- Services -->
+        <div class="service-images">
+            <div class="each-image"><img src="images/styling.png" alt="styling" width="250px" height="250px"></div>
+            <div class="each-image"><img src="images/trimming.png" alt="trimming" width="250px" height="250px"></div>
+            <div class="each-image"><img src="images/shaving.png" alt="shaving" width="250px" height="250px"></div>
+            <div class="each-image"><img src="images/washing1.png" alt="washing" width="250px" height="250px"></div>
+        </div>
 
-    <div class="service">
-        <div class="col1">
-            <div class="service-description">
-                <h2 class="service-name">Hair styles</h2>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
-                a
-                paradisematic country, in which roasted parts.
+
+        <!--<div class="banner"> <img src="images/banner.jpeg" alt="Barbershop" width="100%" height="100%">
+            <div class="service-images line">
+                <img src="images/styling.png" alt="styling" width="250px">
+                <img src="images/trimming.png" alt="trimming" width="250px">
+                <img src="images/shaving.png" alt="shaving" width="250px">
+                <img src="images/washing1.png" alt="washing" width="250px">
             </div>
         </div>
-        <div class="col2">
-            <div class=" service-description">
-                <h2 class="service-name">Beard trim</h2>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
-                a
-                paradisematic country, in which roasted parts.
+    </div>-->
+
+        <div class="service">
+            <div class="col1">
+                <div class="service-description">
+                    <h2>Hair styles</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is
+                        a
+                        paradisematic country, in which roasted parts.</p>
+                </div>
             </div>
-        </div>
-        <div class="col1">
-            <div class="service-description">
-                <h2 class="service-name">Hot shave</h2>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
-                a
-                paradisematic country, in which roasted parts.
+            <div class="col2">
+                <div class=" service-description">
+                    <h2>Beard trim</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is
+                        a
+                        paradisematic country, in which roasted parts.</p>
+                </div>
             </div>
-        </div>
-        <div class="col2">
-            <div class="service-description">
-                <h2>Hair shampoo</h2>
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
-                a
-                paradisematic country, in which roasted parts.
+            <div class="col1">
+                <div class="service-description">
+                    <h2>Hot shave</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is
+                        a
+                        paradisematic country, in which roasted parts.</p>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="service-description">
+                    <h2>Hair shampoo</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is
+                        a
+                        paradisematic country, in which roasted parts.</p>
+                </div>
             </div>
         </div>
 
@@ -276,29 +304,29 @@
                 <img src="images/about_barbershop.jpeg" alt="About barbershop">
             </div>
             <div class="description-about">
-                <h4 align="left">About barber</h4>
-                <h5 align="left">A smooth barber <br /> experience in your town</h5>
-                <div>
-                    <p align="left">
-                        Far far away, behind the word mountains, far from the countries Vakalia and Consonantia,
-                        there
-                        live the blinds texts. Separated they live in Bookmarksgrove right at the coast of the
-                        Semantics, a large language ocean. A small river named Duden flows by their place and
-                        supplies
-                        it with the necessary regelialia.
-                    </p>
-                </div>
-                <div></div>
+                <h4 style="text-align: left">About barber</h4>
+                <h5 style="text-align: left">
+                    A smooth barber <br /> experience in your town</h5>
+                <p align="left">
+                    Far far away, behind the word mountains, far from the countries Vakalia and Consonantia,
+                    there
+                    live the blinds texts. Separated they live in Bookmarksgrove right at the coast of the
+                    Semantics, a large language ocean. A small river named Duden flows by their place and
+                    supplies
+                    it with the necessary regelialia.
+                </p>
+
             </div>
         </div>
+    </div>
 
-        <!-- Testimonial -->
+    <!-- Testimonial -->
 
-        <h4 align="center">Testimonial</h4>
-        <h5 align="center">People say <br /> about our barner</h5>
-        <div class="form"></div>
-        <div class="form"></div>
-        <div class="form"></div>
+    <h4 align="center">Testimonial</h4>
+    <h5 align="center">People say <br /> about our barner</h5>
+    <div class="form"></div>
+    <div class="form"></div>
+    <div class="form"></div>
 </body>
 
 </html>
