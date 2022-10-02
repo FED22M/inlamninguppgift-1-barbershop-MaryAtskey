@@ -10,37 +10,15 @@
 
     <style>
         /* fonts*/
-        @font-face {
-            font-family: 'Barlow Semi Condensed';
-            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf) format('truetype');
-            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Black.ttf) format('truetype');
-            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf) format('truetype');
-            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf) format('truetype');
-            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Bold.ttf) format('truetype');
-            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-ExtraBold.ttf) format('truetype');
-            src: url(fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf) format('truetype');
 
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            src: url(fonts/Poppins/Poppins-Regular.ttf) format('truetype');
-            src: url(fonts/Poppins/Poppins-Black.ttf) format('truetype');
-            src: url(fonts/Poppins/Poppins-Bold.ttf) format('truetype');
-            src: url(fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
-            src: url(fonts/Poppins/Poppins-ExtraBold.ttf) format('truetype');
-            src: url(fonts/Poppins/Poppins-Light.ttf) format('truetype');
-            src: url(fonts/Poppins/Poppins-ExtraLight.ttf) format('truetype');
-            src: url(fonts/Poppins/Poppins-Medium.ttf) format('truetype');
-            src: url(fonts/Poppins/Poppins-Thin.ttf) format('truetype');
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
         /* banner */
         .banner {
             display: block;
             width: 100%;
             height: 800px;
-            margin-right: 0%;
         }
 
         /* headings */
@@ -48,10 +26,10 @@
             text-align: center;
             text-transform: uppercase;
             color: white;
-            font-family: 'Barlow Semi Condensed';
-            font-weight: 900;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: 700;
             float: left;
-            font-size: 18pt;
+            font-size: 24pt;
 
         }
 
@@ -59,9 +37,9 @@
             text-align: center;
             text-transform: uppercase;
             color: white;
-            font-weight: normal;
-            font-family: 'Barlow Semi Condensed';
-            font-size: 20pt;
+            font-weight: 500;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 22pt;
         }
 
         h3 {
@@ -72,44 +50,40 @@
         }
 
         h4 {
-            font-family: 'Barlow Semi Condensed';
-            font-size: 16pt;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 20pt;
             text-transform: uppercase;
             color: rgb(196, 146, 91);
-            font-weight: bold;
+            font-weight: 600;
         }
 
         h5 {
-            font-family: 'Barlow Semi Condensed';
-            font-size: 20pt;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 36pt;
             text-transform: uppercase;
             color: black;
-            font-weight: bold;
+            font-weight: 900;
         }
 
         /* header and navigation */
         #header {
             display: flex;
             position: fixed;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             width: 100%;
-            height: 70px;
+            height: 90px;
             background-color: rgb(20, 27, 37);
             opacity: 0.8;
-            border-bottom: 15px;
-            border-bottom-color: rgb(20, 27, 37);
             justify-content: center;
         }
 
         .logo {
-            float: right;
-            padding: 10 px 20px;
+            float: left;
+            width: 50%;
+            padding: 4px 20px;
             display: inline-block;
             background-color: rgb(20, 27, 37);
             justify-content: center;
-            /*opacity: 1;
-            filter: alpha(opacity=20);*/
-
         }
 
         .navigation {
@@ -124,41 +98,48 @@
 
         .navigation a {
             display: inline-block;
-            /* width: 5em; */
-            padding: 10px 20px;
-            background-color: rgb(20, 27, 37) opacity: 0, 9;
+            /*width: em;*/
+            padding: 15px 20px;
+            background-color: rgb(20, 27, 37);
             opacity: 1;
-            border-bottom: 15px black;
-            text-transform: uppercase;
-            font-weight: normal;
-            color: rgb(235, 232, 222);
-            text-align: center;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 20px;
             text-decoration: none;
-            font-family: 'Barlow Semi Condensed';
+            color: rgb(235, 232, 222);
+            text-transform: uppercase;
+            font-weight: 500;
         }
 
         .navigation a:hover {
             background-color: rgb(20, 27, 37);
             color: rgb(196, 146, 91);
-            /*opacity: 0.8;
-            filter: alpha(opacity=100);*/
         }
 
 
-
         /* services */
+
+        .service-images {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            height: 90px;
+            justify-content: center;
+        }
+
         .service {
             display: flex;
             align-items: center;
             flex-wrap: wrap;
             width: 100%;
-            height: 400px;
+            height: 500px;
             gap: 0px;
+            float: none;
         }
+
 
         .col1 {
             width: 25%;
-            height: 350px;
+            height: 500px;
             background-color: rgb(196, 146, 91);
             color: rgb(235, 232, 222);
             justify-content: center;
@@ -169,7 +150,7 @@
 
         .col2 {
             width: 25%;
-            height: 350px;
+            height: 500px;
             background-color: rgb(183, 134, 73);
             justify-content: center;
             align-items: center;
@@ -178,37 +159,50 @@
             float: left;
         }
 
-        .description-service {
+        .service-description {
+            padding: 90px 18px 10px;
             text-align: center;
             color: rgb(235, 232, 222);
-            font-family: 'Poppins';
-            font-weight: normal;
-            font-size: 14pt;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 200;
+            font-size: 18pt;
         }
 
         /* about barber */
         .about {
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             width: 100%;
             height: 100%;
             gap: 50px;
             background-color: white;
         }
 
-        .col5 {
+        .img {
             width: 30%;
             border: 0px;
             float: left;
             justify-content: left;
         }
 
-        .col6 {
+        .description-about {
             width: 30%;
             border: 0px;
             float: left;
             justify-content: left;
         }
+
+        /* Testimonial */
+        .testimonial {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            gap: 50px;
+            background-color: rgb(235, 232, 222);
+        }
+
+        .box {}
     </style>
 </head>
 
@@ -234,56 +228,72 @@
     </div>
 
     <!-- Services -->
-    <div class="service">
-        <div class="col1">
-            <h2>Hair styles</h2>
-            <div class="description-service">
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts.
-            </div>
-        </div>
-        <div class="col2">
-            <h2>Beard trim</h2>
-            <div class=" description-service">
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts.
-            </div>
-        </div>
-        <div class="col1">
-            <h2>Hot shave</h2>
-            <div class="description-service">
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts.
-            </div>
-        </div>
-        <div class="col2">
-            <h2>Hair shampoo</h2>
-            <div class="description-service">
-                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
-                paradisematic country, in which roasted parts.
-            </div>
-        </div>
+    <div class="service-images">
+        <img src="" </div>
 
-        <!-- About barber -->
-        <div class="about">
-            <div class="col3">
-                <img src="images/about.jpeg" alt="About barbershop">
-            </div>
-            <div class="col4">
-                <h4 align="left">About barber</h4>
-                <h5 align="left">A smooth barber <br /> experience in your town</h5>
-                <div>
-                    <p align="left">
-                        Far far away, behind the word mountains, far from the countries Vakalia and Consonantia, there
-                        live the blinds texts. Separated they live in Bookmarksgrove right at the coast of the
-                        Semantics, a large language ocean. A small river named Duden flows by their place and supplies
-                        it with the necessary regelialia.
-                    </p>
+        <div class="service">
+            <div class="col1">
+                <div class="service-description">
+                    <h2 class="service-name">Hair styles</h2>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a
+                    paradisematic country, in which roasted parts.
                 </div>
-                <div></div>
             </div>
-        </div>
+            <div class="col2">
+                <div class=" service-description">
+                    <h2 class="service-name">Beard trim</h2>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a
+                    paradisematic country, in which roasted parts.
+                </div>
+            </div>
+            <div class="col1">
+                <div class="service-description">
+                    <h2 class="service-name">Hot shave</h2>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a
+                    paradisematic country, in which roasted parts.
+                </div>
+            </div>
+            <div class="col2">
+                <div class="service-description">
+                    <h2>Hair shampoo</h2>
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a
+                    paradisematic country, in which roasted parts.
+                </div>
+            </div>
 
+            <!-- About barber -->
+            <div class="about">
+                <div class="img">
+                    <img src="images/about_barbershop.jpeg" alt="About barbershop">
+                </div>
+                <div class="description-about">
+                    <h4 align="left">About barber</h4>
+                    <h5 align="left">A smooth barber <br /> experience in your town</h5>
+                    <div>
+                        <p align="left">
+                            Far far away, behind the word mountains, far from the countries Vakalia and Consonantia,
+                            there
+                            live the blinds texts. Separated they live in Bookmarksgrove right at the coast of the
+                            Semantics, a large language ocean. A small river named Duden flows by their place and
+                            supplies
+                            it with the necessary regelialia.
+                        </p>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+
+            <!-- Testimonial -->
+
+            <h4 align="center">Testimonial</h4>
+            <h5 align="center">People say <br /> about our barner</h5>
+            <div class="form"></div>
+            <div class="form"></div>
+            <div class="form"></div>
 </body>
 
 </html>
