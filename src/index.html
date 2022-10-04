@@ -40,6 +40,7 @@
             font-weight: 600;
             font-family: 'Barlow Semi Condensed', sans-serif;
             font-size: 22pt;
+            line-height: 5px;
         }
 
         h3 {
@@ -121,37 +122,23 @@
 
 
         /* services */
-
-        .service-images {
+        .service-image {
             display: flex;
-            position: absolute;
-            margin: 50px;
-            width: 100%;
-            height: 250px;
-            top: 640px;
-
-        }
-
-        .each-image {
-            display: flex;
-            position: relative;
-            padding: 0px 4px;
-            flex-wrap: wrap;
-            float: left;
-            width: 25%;
+            width: 250px;
+            margin-top: -120px;
         }
 
         .service {
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
             width: 100%;
             height: 500px;
             gap: 0px;
-            float: none;
         }
 
         .col1 {
+            display: flex;
+            flex-wrap: wrap;
             width: 25%;
             height: 500px;
             background-color: rgb(196, 146, 91);
@@ -161,6 +148,8 @@
         }
 
         .col2 {
+            display: flex;
+            flex-wrap: wrap;
             width: 25%;
             height: 500px;
             background-color: rgb(183, 134, 73);
@@ -187,7 +176,6 @@
             height: 80%;
             gap: 260px;
             background-color: rgb(255, 255, 255);
-
         }
 
         .image-about {
@@ -208,17 +196,17 @@
         }
 
         .box-expirience {
-            width: 180;
-            height: 100;
+            width: 440px;
+            height: 110px;
             background-color: rgb(196, 146, 91);
             justify-content: left;
-            margin-top: 60px;
+            margin-top: 42px;
             border-radius: 8px;
         }
 
         .experience-img {
             float: left;
-            margin: 8px;
+            margin: 15px 15px;
         }
 
         .text-experience {
@@ -228,6 +216,8 @@
             color: white;
             text-transform: uppercase;
             text-align: left;
+            line-height: 38px;
+            padding-top: 18px;
         }
 
         /* Testimonial */
@@ -248,14 +238,13 @@
             background-color: rgb(234, 232, 222);
             justify-content: center;
             margin-top: -4px;
-
         }
 
         .box-testimonial {
             display: flex;
             flex-wrap: wrap;
             width: 360px;
-            height: 300px;
+            height: 320px;
             background-color: white;
             justify-content: left;
             float: left;
@@ -279,6 +268,23 @@
             margin-top: -28px;
             margin-left: 24px;
         }
+
+        .customer-photo {
+            display: flex;
+            margin-top: -10px;
+            margin-left: 24px;
+            float: left;
+        }
+
+        .customer-info {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 16pt;
+            color: rgb(20, 27, 37);
+            text-align: left;
+            margin-left: 20px;
+        }
+
 
         /* Footer */
 
@@ -375,49 +381,49 @@
     </div>
 
     <!-- Services -->
-    <div class="service-images">
+    <!--<div class="service-images">
         <div class="each-image"><img src="images/styling.png" alt="styling" width="250px" height="250px"></div>
         <div class="each-image"><img src="images/trimming.png" alt="trimming" width="250px" height="250px"></div>
         <div class="each-image"><img src="images/shaving.png" alt="shaving" width="250px" height="250px"></div>
         <div class="each-image"><img src="images/washing1.png" alt="washing" width="250px" height="250px"></div>
-    </div>
+    </div>-->
 
     <div class="service">
         <div class="col1">
-            <div class="service-description">
-                <h2>Hair styles</h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                    is
-                    a
-                    paradisematic country, in which roasted parts.</p>
-            </div>
+            <img class="service-image" src="images/styling.png" alt="styling" width="250px" height="250px">
+            <h2 class="h2">Hair styles</h2>
+            <p class="service-description">A small river named Duden flows by their place and supplies it with the
+                necessary regelialia. It
+                is
+                a
+                paradisematic country, in which roasted parts.</p>
         </div>
         <div class="col2">
-            <div class=" service-description">
-                <h2>Beard trim</h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                    is
-                    a
-                    paradisematic country, in which roasted parts.</p>
-            </div>
+            <img class="service-image" src="images/trimming.png" alt="trimming" width="250px" height="250px">
+            <h2 class="h2">Beard trim</h2>
+            <p class=" service-description">A small river named Duden flows by their place and supplies it with the
+                necessary regelialia. It
+                is
+                a
+                paradisematic country, in which roasted parts.</p>
         </div>
         <div class="col1">
-            <div class="service-description">
-                <h2>Hot shave</h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                    is
-                    a
-                    paradisematic country, in which roasted parts.</p>
-            </div>
+            <img class="service-image" src="images/shaving.png" alt="shaving" width="250px" height="250px">
+            <h2 class="h2">Hot shave</h2>
+            <p class=" service-description">A small river named Duden flows by their place and supplies it with the
+                necessary regelialia. It
+                is
+                a
+                paradisematic country, in which roasted parts.</p>
         </div>
         <div class="col2">
-            <div class="service-description">
-                <h2>Hair shampoo</h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
-                    is
-                    a
-                    paradisematic country, in which roasted parts.</p>
-            </div>
+            <img class="service-image" src="images/washing.png" alt="washing" width="250px" height="250px">
+            <h2 class="h2">Hair shampoo</h2>
+            <p class=" service-description">A small river named Duden flows by their place and supplies it with the
+                necessary regelialia. It
+                is
+                a
+                paradisematic country, in which roasted parts.</p>
         </div>
     </div>
 
@@ -441,7 +447,7 @@
             <div class="box-expirience">
                 <div class="experience-img"><img src="images/experience.png" alt="eprerience" width="80px"
                         height="80px"></div>
-                <p class="text-experience"><span style="font-size: 34pt; line-height: 60px;"> 20 </span><br />years
+                <p class="text-experience"><span style="font-size: 36pt;"> 20 </span><br />years
                     of
                     experience</p>
             </div>
@@ -462,6 +468,11 @@
                 there
                 live the blinds texts.
             </p>
+            <img class="customer-photo" src="images/testimonial1.png" alt="testimonial 1" width="120px" height="120px">
+            <img class="rating">
+            <p class="customer-info">Roger Scott <br /> <span
+                    style="font-family: 'Poppins', sans-serif; font-size: 12pt; color: rgb(196, 146, 91); text-transform: uppercase;">
+                    Customer </span></p>
         </div>
         <div class="box-testimonial">
             <img class="quotes" src="images/quotes.png" alt="quotes" width="50px" height="50px">
@@ -470,6 +481,11 @@
                 there
                 live the blinds texts.
             </p>
+            <img class="customer-photo" src="images/testimonial2.png" alt="testimonial 2" width="120px" height="120px">
+            <img class="rating">
+            <p class="customer-info">Roger Scott <br /> <span
+                    style="font-family: 'Poppins', sans-serif; font-size: 12pt; color: rgb(196, 146, 91); text-transform: uppercase;">
+                    Customer </span></p>
         </div>
         <div class="box-testimonial">
             <img class="quotes" src="images/quotes.png" alt="quotes" width="50px" height="50px">
@@ -478,6 +494,11 @@
                 there
                 live the blinds texts.
             </p>
+            <img class="customer-photo" src="images/testimonial3.png" alt="testimonial 3" width="120px" height="120px">
+            <img class="rating">
+            <p class="customer-info">Roger Scott <br /> <span
+                    style="font-family: 'Poppins', sans-serif; font-size: 12pt; color: rgb(196, 146, 91); text-transform: uppercase;">
+                    Customer </span></p>
         </div>
     </div>
 
