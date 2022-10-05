@@ -360,11 +360,24 @@
             display: flex;
             flex-wrap: wrap;
             width: 350px;
-            margin-left: 3%;
+            margin-left: 40px;
             justify-content: left;
-            /*margin-left: 148px;
-            margin-top: 40px;*/
             float: left;
+        }
+
+        .social-1 {
+            display: flex;
+            margin-left: 40px;
+        }
+
+        .social-2 {
+            display: flex;
+            margin-left: 40px;
+        }
+
+        .social-3 {
+            display: flex;
+            margin-left: 40px;
         }
 
         .col4 {
@@ -373,8 +386,6 @@
             width: 350px;
             justify-content: left;
             float: left;
-            /*margin-left: 80px;
-            margin-top: 40px;*/
         }
 
         .col5 {
@@ -383,8 +394,6 @@
             width: 350px;
             justify-content: left;
             float: left;
-            /*margin-left: 80px;
-            margin-top: 40px;*/
         }
 
         .col6 {
@@ -392,8 +401,6 @@
             flex-wrap: wrap;
             width: 350px;
             justify-content: left;
-            /*margin-right: 148px;
-            margin-top: 40px;*/
             float: left;
         }
 
@@ -404,7 +411,7 @@
             color: rgb(234, 232, 222);
             text-align: left;
             text-decoration: none;
-            line-height: 2.5em;
+            line-height: 2em;
         }
 
         .links {
@@ -417,25 +424,32 @@
             line-height: 2.5em;
         }
 
-        /*.image-social {
-            width: 25%;
-            justify-content: left;
-        }
-
-        .image-contact {
-            width: 25%;
-            justify-content: left;
-        }
-
-        .col4:hover {
-            background-color: rgb(20, 27, 37);
+        .col4 li a:hover {
+            background-color: transparent;
             color: rgb(196, 146, 91);
         }
 
-        .col5:hover {
-            background-color: rgb(20, 27, 37);
+        .col4 li a::before {
+            content: ">";
+            color: rgb(234, 232, 222);
+        }
+
+        .col5 li a:hover {
+            background-color: transparent;
             color: rgb(196, 146, 91);
-        }*/
+        }
+
+        .col5 li a::before {
+            content: ">";
+            color: rgb(234, 232, 222);
+        }
+
+        .col6 li a:hover {
+            background-color: transparent;
+            color: rgb(196, 146, 91);
+        }
+
+        */
     </style>
 </head>
 
@@ -579,37 +593,42 @@
     <!-- Footer -->
     <div id="footer">
         <div class="col3">
-            <h5 class="h5">Barbershop</h5>
-            <p class="text-footer">Far far away, behind the word
-                mountains, far from the
-                countries</p>
+            <ul>
+                <h5 class="h5">Barbershop</h5>
+                <li class="text-footer" type="none">Far far away, behind the word
+                    mountains, far from the
+                    countries</li>
+            </ul>
+            <a href="#"><img class="social-1" src="images/twitter.png" alt="twitter" width="46px" height="46px"></a>
+            <a href="#"><img class="social-2" src="images/facebook.png" alt="facebook" width="46px" height="46px"></a>
+            <a href="#"><img class="social-3" src="images/instagram.png" alt="instagram" width="46px" height="46px"></a>
         </div>
         <div class="col4">
             <ul>
                 <h5 class="h5">Explore</h5>
-                <li><a class="links" href="#">About</a></li>
-                <li><a class="links" href="#">Services</a></li>
-                <li><a class="links" href="#">Gallery</a></li>
-                <li><a class="links" href="#">Blog</a></li>
+                <li type="none"><a class="links" href="#"> About</a></li>
+                <li type="none"><a class="links" href="#"> Services</a></li>
+                <li type="none"><a class="links" href="#"> Gallery</a></li>
+                <li type="none"><a class="links" href="#"> Blog</a></li>
             </ul>
         </div>
         <div class="col5">
             <ul>
                 <h5 class="h5">Info</h5>
-                <li><a class="links" href="#">Join us</a></li>
-                <li><a class="links" href="#">Make Appointment</a></li>
-                <li><a class="links" href="#">Privacy & Policy</a></li>
-                <li><a class="links" href="#">Term & Conditions</a></li>
+                <li type="none"><a class="links" href="#"> Join us</a></li>
+                <li type="none"><a class="links" href="#"> Make Appointment</a></li>
+                <li type="none"><a class="links" href="#"> Privacy & Policy</a></li>
+                <li type="none"><a class="links" href="#"> Term & Conditions</a></li>
             </ul>
         </div>
         <div class="col6">
             <ul>
                 <h5 class="h5">Have a question?</h5>
-                <li class="text-footer">203 Fake St. Mountain
+                <li class="text-footer" type="none">203 Fake St. Mountain
                     View, San Francisco,
                     California, USA</li>
-                <li class="text-footer">+2 392 3929 210</li>
-                <li><a class="links" href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
+                <li class="text-footer" type="none">+2 392 3929 210</li>
+                <li type="none"><a class="links" href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
             </ul>
         </div>
     </div>
