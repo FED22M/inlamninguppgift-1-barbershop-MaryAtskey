@@ -22,10 +22,12 @@
         }
 
         .banner-text {
-            position: absolute;
-            width: 60%;
-            margin-left: 40%;
-            margin-top: -660px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 500px;
+            padding: 10px;
+            margin-left: 740px;
+            margin-top: -670px;
             justify-content: left;
             opacity: 1;
             font-family: 'Barlow Semi Condensed', sans-serif;
@@ -36,26 +38,27 @@
         }
 
         .welcome-text {
-            position: absolute;
-            width: 40%;
-            margin-left: 45%;
-            margin-top: -500px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 30%;
+            margin-left: 55%;
+            margin-top: -296px;
             justify-content: left;
-            opacity: 0.9;
+            opacity: 1;
             font-family: 'Poppins', sans-serif;
             color: rgb(255, 255, 255);
             font-weight: 400;
-            font-size: 18pt;
+            font-size: 16pt;
             text-align: left;
             padding: 20px;
         }
 
         .line {
-            position: absolute;
+            display: flex;
+            flex-wrap: nowrap;
             border-left: 4px solid rgb(196, 146, 91);
-            height: 230px;
-            /*padding-top: 40px;*/
-            padding-left: 20%;
+            height: 250px;
+            padding-left: 500px;
             margin-top: -40px;
         }
 
@@ -252,7 +255,7 @@
             font-family: 'Poppins', sans-serif;
             color: rgb(20, 27, 37);
             font-weight: 200;
-            font-size: 18pt;
+            font-size: 16pt;
             margin-top: 36px;
         }
 
@@ -351,7 +354,7 @@
         /* Footer */
 
         #footer {
-            background-color: rgb(20, 27, 37);
+            background-color: rgb(8, 6, 0);
             width: 100%;
             height: 400px;
         }
@@ -360,7 +363,7 @@
             display: flex;
             flex-wrap: wrap;
             width: 350px;
-            margin-left: 40px;
+            margin-left: 130px;
             justify-content: left;
             float: left;
         }
@@ -383,7 +386,7 @@
         .col4 {
             display: flex;
             flex-wrap: wrap;
-            width: 350px;
+            width: 250px;
             justify-content: left;
             float: left;
         }
@@ -391,7 +394,7 @@
         .col5 {
             display: flex;
             flex-wrap: wrap;
-            width: 350px;
+            width: 250px;
             justify-content: left;
             float: left;
         }
@@ -404,10 +407,17 @@
             float: left;
         }
 
+        .col6 li img {
+            display: flex;
+            margin-top: 4px;
+            float: left;
+            margin-right: 3px;
+        }
+
         .text-footer {
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
-            font-size: 14pt;
+            font-size: 16pt;
             color: rgb(234, 232, 222);
             text-align: left;
             text-decoration: none;
@@ -474,11 +484,11 @@
     <div class="banner">
         <img src="images/banner.jpeg" alt="Barbershop" width="100%" height="100%">
         <div class="banner-text">
-            <h3 class="h3">Welcome to barbershop</h4>
-                <h4 class="h4" style="text-align: left; font-size: 38pt; color:white">We will create <span
-                        style="color:transparent ; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: white;">the
-                        <br />style</span> of your dream</h4>
-                <div class="line"></div>
+            <h3 class="h3">Welcome to barbershop</h3>
+            <h4 class="h4" style="text-align: left; font-size: 38pt; color:white">We will create <span
+                    style="color:transparent ; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: white;">the
+                    <br />style</span> of your dream</h4>
+            <div class="line"></div>
         </div>
         <div class="welcome-text">
             <p>A small river named Duden flows by their place and
@@ -624,11 +634,14 @@
         <div class="col6">
             <ul>
                 <h5 class="h5">Have a question?</h5>
-                <li class="text-footer" type="none">203 Fake St. Mountain
+                <li class="text-footer" type="none"><img src="images/map.png" alt="map-icon" width="35px" height="35px">
+                    203 Fake St. Mountain
                     View, San Francisco,
                     California, USA</li>
-                <li class="text-footer" type="none">+2 392 3929 210</li>
-                <li type="none"><a class="links" href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
+                <li class="text-footer" type="none"><img src="images/phone.png" alt="phone-icon" width="35px"
+                        height="35px"> +2 392 3929 210</li>
+                <li type="none"><img src="images/email.png" alt="email-icon" width="35px" height="35px"><a class="links"
+                        href="mailto:info@yourdomain.com"> info@yourdomain.com</a></li>
             </ul>
         </div>
     </div>
