@@ -1,1 +1,445 @@
+/* fonts*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* banner */
+.banner {
+    display: block;
+    width: 100%;
+    height: 800px;
+}
+
+.banner-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    padding: 10px;
+    margin-left: 740px;
+    margin-top: -686px;
+    justify-content: left;
+    opacity: 1;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 34pt;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+}
+
+.welcome-text {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-left: 55%;
+    margin-top: -290px;
+    justify-content: left;
+    opacity: 1;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16pt;
+    text-align: left;
+    padding: 10px;
+}
+
+.line {
+    display: flex;
+    flex-wrap: nowrap;
+    border-left: 4px solid rgb(196, 146, 91);
+    height: 260px;
+    padding-left: 500px;
+    margin-top: -40px;
+}
+
+.more-box {
+    width: 280px;
+    height: 48px;
+    opacity: 1;
+    border-radius: 8px;
+    border: 4px solid rgb(196, 146, 91);
+    text-align: center;
+    padding: 5px 5px;
+    line-height: 50px;
+}
+
+.more-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(196, 146, 91);
+    text-decoration: none;
+}
+
+.more-text:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+/* headings */
+.h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    float: left;
+    font-size: 24pt;
+}
+
+.h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 22pt;
+}
+
+.h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18pt;
+    text-transform: uppercase;
+    color: rgb(196, 146, 91);
+    font-weight: 600;
+    margin-bottom: -60px;
+}
+
+.h4 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 34pt;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+}
+
+.h5 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18pt;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-align: left;
+    line-height: 1em;
+}
+
+/* header and navigation */
+#header {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 99%;
+    height: 90px;
+    background-color: rgb(20, 27, 37);
+    opacity: 0.8;
+}
+
+.logo {
+    display: inline-block;
+    width: 300px;
+    padding: 4px 34px;
+    margin-left: 130px;
+    background-color: rgb(20, 27, 37);
+}
+
+.navigation {
+    list-style-type: none;
+    width: 600;
+    margin-left: 120px;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation a {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: rgb(20, 27, 37);
+    opacity: 1;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(235, 232, 222);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    background-color: transparent;
+    color: rgb(196, 146, 91);
+}
+
+
+/* services */
+.service-image {
+    display: flex;
+    width: 250px;
+    margin-top: -128px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.col1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 500px;
+    background-color: rgb(196, 146, 91);
+    color: rgb(235, 232, 222);
+    justify-content: center;
+    float: left;
+}
+
+.col2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 500px;
+    background-color: rgb(183, 134, 73);
+    justify-content: center;
+    color: rgb(235, 232, 222);
+    float: left;
+}
+
+.service-description {
+    padding: 20px 18px 10px;
+    text-align: center;
+    color: rgb(235, 232, 222);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 18pt;
+    margin-top: -25px;
+}
+
+
+/* about barber */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    gap: 260px;
+    background-color: rgb(255, 255, 255);
+}
+
+.image-about {
+    width: 24%;
+    float: left;
+    margin-left: 148px;
+}
+
+.description-about {
+    width: 40%;
+    float: left;
+    justify-content: left;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(20, 27, 37);
+    font-weight: 200;
+    font-size: 16pt;
+    margin-top: 36px;
+}
+
+.box-expirience {
+    width: 440px;
+    height: 110px;
+    background-color: rgb(196, 146, 91);
+    justify-content: left;
+    margin-top: 38px;
+    border-radius: 8px;
+}
+
+.experience-img {
+    float: left;
+    margin: 15px 15px;
+}
+
+.text-experience {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18pt;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 38px;
+    padding-top: 18px;
+}
+
+/* Testimonial */
+.title {
+    display: inline;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+    height: 740px;
+    background-color: rgb(234, 232, 222);
+    justify-content: center;
+    margin-top: -4px;
+}
+
+.box-testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: 320px;
+    background-color: white;
+    justify-content: left;
+    float: left;
+    border-radius: 8px;
+    margin: 0px 16px 60px;
+}
+
+.text-testimonial {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: rgb(20, 27, 37);
+    text-align: left;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 10px;
+}
+
+.quotes {
+    display: flex;
+    margin-top: -28px;
+    margin-left: 24px;
+}
+
+.customer-photo {
+    display: flex;
+    margin-top: -10px;
+    margin-left: 24px;
+    float: left;
+}
+
+.customer-info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16pt;
+    color: rgb(20, 27, 37);
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+/* Footer */
+#footer {
+    background-color: rgb(8, 6, 0);
+    width: 100%;
+    height: 400px;
+}
+
+.col3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    margin-left: 130px;
+    justify-content: left;
+    float: left;
+}
+
+.social-1 {
+    display: flex;
+    margin-left: 40px;
+}
+
+.social-2 {
+    display: flex;
+    margin-left: 40px;
+}
+
+.social-3 {
+    display: flex;
+    margin-left: 40px;
+}
+
+.col4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: left;
+    float: left;
+}
+
+.col5 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: left;
+    float: left;
+}
+
+.col6 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: left;
+    float: left;
+}
+
+.col6 li img {
+    display: flex;
+    margin-top: 4px;
+    float: left;
+    margin-right: 3px;
+}
+
+.text-footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    color: rgb(234, 232, 222);
+    text-align: left;
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.links {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: rgb(234, 232, 222);
+    text-align: left;
+    text-decoration: none;
+    line-height: 2.5em;
+}
+
+.col4 li a:hover {
+    background-color: transparent;
+    color: rgb(196, 146, 91);
+}
+
+.col4 li a::before {
+    content: ">";
+    color: rgb(234, 232, 222);
+}
+
+.col5 li a:hover {
+    background-color: transparent;
+    color: rgb(196, 146, 91);
+}
+
+.col5 li a::before {
+    content: ">";
+    color: rgb(234, 232, 222);
+}
+
+.col6 li a:hover {
+    background-color: transparent;
+    color: rgb(196, 146, 91);
+}
