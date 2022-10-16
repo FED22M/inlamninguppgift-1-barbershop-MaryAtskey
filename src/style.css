@@ -3,91 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-/* banner */
-.banner {
-    display: flexbox;
-    height: 929px;
-    width: 100%;
-}
-
-.banner-text {
-    display: flex;
-    flex-wrap: wrap;
-    width: 500px;
-    padding: 10px;
-    margin-left: 740px;
-    margin-top: -760px;
-    justify-content: left;
-    opacity: 1;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 34pt;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 800;
-}
-
-.welcome-text {
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%;
-    margin-left: 55%;
-    margin-top: -290px;
-    justify-content: left;
-    opacity: 1;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255);
-    font-weight: 400;
-    font-size: 16pt;
-    text-align: left;
-    padding: 10px;
-}
-
-.line {
-    display: flex;
-    flex-wrap: nowrap;
-    border-left: 4px solid rgb(196, 146, 91);
-    height: 260px;
-    padding-left: 500px;
-    margin-top: -40px;
-}
-
-.more-box {
-    width: 280px;
-    height: 48px;
-    opacity: 1;
-    border-radius: 8px;
-    border: 4px solid rgb(196, 146, 91);
-    text-align: center;
-    padding: 5px 5px;
-    line-height: 50px;
-}
-
-.more-text {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16pt;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: rgb(196, 146, 91);
-    text-decoration: none;
-}
-
-.more-text:hover {
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-}
-
 /* headings */
-.h1 {
-    text-align: center;
+h1 {
+    text-align: left;
     text-transform: uppercase;
     color: white;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 700;
-    float: left;
     font-size: 24pt;
 }
 
-.h2 {
+h2 {
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -96,7 +22,7 @@
     font-size: 22pt;
 }
 
-.h3 {
+h3 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 18pt;
     text-transform: uppercase;
@@ -105,7 +31,7 @@
     margin-bottom: -60px;
 }
 
-.h4 {
+h4 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 34pt;
     text-transform: uppercase;
@@ -113,7 +39,7 @@
     font-weight: 800;
 }
 
-.h5 {
+h5 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 18pt;
     text-transform: uppercase;
@@ -123,54 +49,128 @@
     line-height: 1em;
 }
 
-/* header and navigation */
-#header {
+
+/* header */
+header {
+    display: flex;
+    width: 100%;
+}
+
+/* banner */
+.banner {
+    background-image: url("images/main-banner.jpeg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 1600px;
+    max-width: 100%;
+    height: 806px;
+}
+
+.banner-text-box {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 50%;
+    margin-top: 130px;
+    justify-content: left;
+    opacity: 1;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+}
+
+.banner-description {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 0%;
+    margin-top: -40px;
+    padding-left: 80px;
+    opacity: 1;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16pt;
+    text-align: left;
+    border-left: solid 4px rgb(196, 146, 91);
+}
+
+.banner-description a {
+    display: flex;
+    width: 290px;
+    height: 36px;
+    justify-content: center;
+    margin-top: 52px;
+    padding: 10px 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(196, 146, 91);
+    text-decoration: none;
+    border: solid 4px rgb(196, 146, 91);
+}
+
+.banner-description a:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+
+/* navigation */
+.logo {
+    display: flex;
+    width: 100px;
+    background-color: transparent;
+    margin-top: 4px;
+    margin-right: 400px;
+}
+
+.navigation {
     display: flex;
     position: fixed;
     flex-wrap: wrap;
+    justify-content: right;
     width: 99%;
     height: 90px;
     background-color: rgb(20, 27, 37);
     opacity: 0.8;
 }
 
-.logo {
-    display: inline-block;
-    width: 300px;
-    padding: 4px 34px;
-    margin-left: 130px;
-    background-color: rgb(20, 27, 37);
+.menu {
+    display: flex;
+    width: 500;
+    margin-right: 100px;
 }
 
-.navigation {
-    list-style-type: none;
-    width: 600;
-    margin-left: 120px;
-}
-
-.navigation li {
+.menu li {
     display: flex;
     float: left;
-    background-color: rgb(20, 27, 37);
-    opacity: 1;
+    background-color: transparent;
 }
 
-.navigation a {
+.menu a {
     display: inline-block;
     padding: 15px 20px;
-    background-color: rgb(20, 27, 37);
-    opacity: 1;
+    background-color: transparent;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 20px;
+    list-style-type: none;
     text-decoration: none;
     color: rgb(235, 232, 222);
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.navigation a:hover {
+.menu a:hover {
     background-color: transparent;
     color: rgb(196, 146, 91);
+}
+
+#menu-button {
+    display: none;
 }
 
 
@@ -182,8 +182,7 @@
 }
 
 .service {
-    display: flexbox;
-    /*position: relative;*/
+    display: flex;
     align-items: center;
     width: 100%;
     height: 540px;
@@ -249,17 +248,24 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 680px;
     gap: 260px;
     background-color: rgb(255, 255, 255);
 }
 
 .image-about {
-    width: 24%;
-    float: left;
-    margin-left: 148px;
+    background-image: url("images/about_barbershop.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 552px;
+    height: 680px;
+    margin-left: 150px;
+
 }
 
 .description-about {
+    display: flex;
+    flex-wrap: wrap;
     width: 40%;
     float: left;
     justify-content: left;
@@ -267,7 +273,9 @@
     color: rgb(20, 27, 37);
     font-weight: 200;
     font-size: 16pt;
-    margin-top: 40px;
+    margin-top: -920px;
+    margin-left: 50%;
+    margin-bottom: 320px;
 }
 
 .title-about {
@@ -307,20 +315,11 @@
     text-transform: uppercase;
     text-align: left;
     line-height: 38px;
-    padding-top: 18px;
+    margin-top: 18px;
 }
 
 
 /* Testimonial */
-.title-testimonial {
-    display: inline;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 200px;
-    justify-content: center;
-    margin-top: 36px;
-}
-
 .testimonial {
     display: flex;
     flex-wrap: wrap;
@@ -328,6 +327,15 @@
     background-color: rgb(234, 232, 222);
     justify-content: center;
     margin-top: -4px;
+}
+
+.title-testimonial {
+    display: inline;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    margin-top: 36px;
 }
 
 .box-testimonial {
@@ -385,7 +393,7 @@
 
 
 /* Footer */
-#footer {
+footer {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(8, 6, 0);
@@ -512,11 +520,11 @@
 
     /* headings */
     .h1 {
-        font-size: 18pt;
+        font-size: 14pt;
     }
 
     .h2 {
-        font-size: 18pt;
+        font-size: 20pt;
     }
 
     .h3 {
@@ -532,59 +540,96 @@
         font-size: 14pt;
     }
 
-    .banner {
-        background-image: url("images/main-banner-mobile.jpeg");
-        width: 100%;
-        max-width: 767;
-        height: 929px;
-    }
-
-    .banner-text {
-        width: 70%;
-        margin-left: 0%;
-    }
-
-    .welcome-text {
+    .banner-text-box {
         width: 80%;
+        margin-top: 80px;
+        margin-left: 2%;
+        font-size: 16pt;
+    }
+
+    .banner-description {
+        width: 90%;
+        margin-top: -60px;
+        margin-left: 2%;
         font-size: 14pt;
-        margin-left: 0%;
-        margin-top: -92px;
+        padding-left: 0%;
+        text-align: left;
+        border-left: transparent;
     }
 
-    .line {
-        display: none;
+    .banner-description a {
+        width: 260px;
+        height: 28px;
+        font-size: 14pt;
+        margin-top: 10px;
     }
 
+    /* navigation */
     .logo {
-        width: 30%;
-        margin-left: 0%;
-    }
-
-    .navigation li {
-        /*width: 70%;
-        justify-content: ;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;*/
-        height: 200px;
-        position: absolute;
-        top: 50%;
-        /*margin: 20 0 0 0;*/
+        width: 70px;
+        height: 70px;
+        margin-top: -10px;
+        margin-right: 400px;
     }
 
     .navigation {
-        position: relative;
         width: 100%;
+        height: 70px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(20, 27, 37);
+        opacity: 0.8;
+        width: 80px;
+        min-width: 120px;
+        margin-top: 50px;
+        padding-right: 0px;
+        margin-right: 20px;
+        z-index: 0;
     }
 
 
+    #menu-button {
+        position: relative;
+        display: block;
+        border-color: transparent;
+        text-transform: uppercase;
+        font-size: 14pt;
+        color: rgb(235, 232, 222);
+        background-color: rgb(20, 27, 37);
+        opacity: 1;
+        width: 40%;
+        height: 50px;
+        margin-top: -56px;
+        margin-right: -4px;
+    }
 
+    button+.menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    button.menu-open+.menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
 
     /* service */
     .service-image {
-        display: flexbox;
         width: 250px;
         height: 250px;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
     }
 
     .col1 {
@@ -617,17 +662,21 @@
 
 
     /* about block */
+    .about {
+        width: 100%;
+        height: auto;
+    }
+
     .image-about {
         width: 100%;
-        float: none;
         margin-left: 0%;
     }
 
     .description-about {
-        width: 80%;
+        width: 90%;
         margin-left: 0%;
         margin-top: -270px;
-        padding: 30px 0px 50px;
+        margin-bottom: 60px;
     }
 
     .title-about {
