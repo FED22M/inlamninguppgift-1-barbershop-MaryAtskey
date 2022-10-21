@@ -1,0 +1,761 @@
+/* fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* headings */
+h1 {
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 24pt;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 22pt;
+}
+
+h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18pt;
+    text-transform: uppercase;
+    color: rgb(196, 146, 91);
+    font-weight: 600;
+    margin-bottom: -60px;
+}
+
+h4 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 34pt;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+}
+
+h5 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18pt;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-align: left;
+    line-height: 1em;
+}
+
+
+/* header */
+header {
+    display: flex;
+    width: 100%;
+}
+
+/* banner */
+.banner {
+    background-image: url("images/main-banner.jpeg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 1600px;
+    max-width: 100%;
+    height: 806px;
+}
+
+.banner-text-box {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 50%;
+    margin-top: 130px;
+    justify-content: left;
+    opacity: 1;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+}
+
+.banner-description {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 0%;
+    margin-top: -40px;
+    padding-left: 80px;
+    opacity: 1;
+    text-transform: none;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16pt;
+    text-align: left;
+    border-left: solid 4px rgb(196, 146, 91);
+}
+
+.banner-description a {
+    display: flex;
+    width: 290px;
+    height: 36px;
+    justify-content: center;
+    margin-top: 52px;
+    padding: 10px 10px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(196, 146, 91);
+    text-decoration: none;
+    border: solid 4px rgb(196, 146, 91);
+}
+
+.banner-description a:hover {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+
+
+/* navigation */
+.logo {
+    display: flex;
+    width: 100px;
+    background-color: transparent;
+    margin-top: 4px;
+    margin-right: 400px;
+}
+
+.navigation {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 99%;
+    height: 90px;
+    background-color: rgb(20, 27, 37);
+    opacity: 0.8;
+}
+
+.menu {
+    display: flex;
+    width: 500;
+    margin-right: 100px;
+}
+
+.menu li {
+    display: flex;
+    float: left;
+    background-color: transparent;
+}
+
+.menu a {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: transparent;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(235, 232, 222);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    background-color: transparent;
+    color: rgb(196, 146, 91);
+}
+
+#menu-button {
+    display: none;
+}
+
+
+/* services */
+.service-image {
+    display: flex;
+    width: 250px;
+    margin-top: -128px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 540px;
+}
+
+.col1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 540px;
+    background-color: rgb(196, 146, 91);
+    color: rgb(235, 232, 222);
+    justify-content: center;
+    float: left;
+}
+
+.col2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 540px;
+    background-color: rgb(183, 134, 73);
+    justify-content: center;
+    color: rgb(235, 232, 222);
+    float: left;
+}
+
+.col3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 540px;
+    background-color: rgb(196, 146, 91);
+    color: rgb(235, 232, 222);
+    justify-content: center;
+    float: left;
+}
+
+.col4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 540px;
+    background-color: rgb(183, 134, 73);
+    justify-content: center;
+    color: rgb(235, 232, 222);
+    float: left;
+}
+
+.service-description {
+    padding: 20px 18px 10px;
+    text-align: center;
+    color: rgb(235, 232, 222);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 18pt;
+    margin-top: -40px;
+}
+
+
+/* about barber */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 680px;
+    gap: 260px;
+    background-color: rgb(255, 255, 255);
+}
+
+.image-about {
+    background-image: url("images/about_barbershop.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 552px;
+    height: 680px;
+    margin-left: 150px;
+
+}
+
+.description-about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    float: left;
+    justify-content: left;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(20, 27, 37);
+    font-weight: 200;
+    font-size: 16pt;
+    margin-top: -920px;
+    margin-left: 50%;
+    margin-bottom: 320px;
+}
+
+.title-about {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+}
+
+.text-about {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(20, 27, 37);
+    font-weight: 200;
+    font-size: 16pt;
+    margin-top: -20px;
+}
+
+.box-expirience {
+    width: 440px;
+    height: 110px;
+    background-color: rgb(196, 146, 91);
+    justify-content: left;
+    margin-top: 38px;
+    border-radius: 8px;
+}
+
+.experience-img {
+    float: left;
+    margin: 15px 15px;
+}
+
+.text-experience {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18pt;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 38px;
+    margin-top: 18px;
+}
+
+
+/* Testimonial */
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(234, 232, 222);
+    justify-content: center;
+    margin-top: -4px;
+}
+
+.title-testimonial {
+    display: inline;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.box-testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+    height: 320px;
+    background-color: white;
+    justify-content: left;
+    float: left;
+    border-radius: 8px;
+    margin: 0px 16px 60px;
+}
+
+.text-testimonial {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: rgb(20, 27, 37);
+    text-align: left;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 10px;
+}
+
+.quotes {
+    display: flex;
+    margin-top: -28px;
+    margin-left: 24px;
+}
+
+.customer-photo {
+    display: flex;
+    margin-top: -10px;
+    margin-left: 24px;
+    float: left;
+}
+
+.customer-info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16pt;
+    color: rgb(20, 27, 37);
+    text-align: left;
+    margin-left: 24px;
+}
+
+.raiting {
+
+    margin-top: 10px;
+    margin-left: 0px;
+    line-height: 0.5em;
+    color: rgb(196, 146, 91);
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(8, 6, 0);
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.col5 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    margin-left: 140px;
+    justify-content: left;
+    float: left;
+    background-color: rgb(8, 6, 0);
+}
+
+.social-1 {
+    display: flex;
+    margin-left: 40px;
+    margin-top: -28px;
+}
+
+.social-2 {
+    display: flex;
+    margin-left: 20px;
+    margin-top: -28px;
+}
+
+.social-3 {
+    display: flex;
+    margin-left: 20px;
+    margin-top: -28px;
+}
+
+.col6 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    justify-content: left;
+    float: left;
+    background-color: rgb(8, 6, 0);
+}
+
+.col7 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: left;
+    float: left;
+    background-color: rgb(8, 6, 0);
+}
+
+.col8 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    justify-content: left;
+    float: left;
+    background-color: rgb(8, 6, 0);
+}
+
+.col8 li img {
+    display: flex;
+    margin-top: 4px;
+    float: left;
+    margin-right: 6px;
+    margin-top: 2px;
+    background-color: rgb(8, 6, 0);
+}
+
+.text-footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: rgb(234, 232, 222);
+    text-align: left;
+    text-decoration: none;
+    line-height: 2.5em;
+    background-color: rgb(8, 6, 0);
+}
+
+.links {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: rgb(234, 232, 222);
+    text-align: left;
+    text-decoration: none;
+    line-height: 2.5em;
+    background-color: rgb(8, 6, 0);
+}
+
+.col6 li a:hover {
+    background-color: transparent;
+    color: rgb(196, 146, 91);
+}
+
+.col6 li a::before {
+    content: ">";
+    color: rgb(234, 232, 222);
+}
+
+.col7 li a:hover {
+    background-color: transparent;
+    color: rgb(196, 146, 91);
+}
+
+.col7 li a::before {
+    content: ">";
+    color: rgb(234, 232, 222);
+}
+
+.col8 li a:hover {
+    background-color: transparent;
+    color: rgb(196, 146, 91);
+}
+
+
+
+
+/* Styles for medium screens (max 767px) */
+@media screen and (max-width: 767px) {
+
+    /* headings */
+    .h1 {
+        font-size: 14pt;
+    }
+
+    .h2 {
+        font-size: 20pt;
+    }
+
+    .h3 {
+        font-size: 14pt;
+        line-height: 2.5em;
+    }
+
+    .h4 {
+        font-size: 26pt;
+    }
+
+    .h5 {
+        font-size: 14pt;
+    }
+
+    .banner-text-box {
+        width: 80%;
+        margin-top: 80px;
+        margin-left: 2%;
+        font-size: 16pt;
+    }
+
+    .banner-description {
+        width: 90%;
+        margin-top: -60px;
+        margin-left: 2%;
+        font-size: 14pt;
+        padding-left: 0%;
+        text-align: left;
+        border-left: transparent;
+    }
+
+    .banner-description a {
+        width: 260px;
+        height: 28px;
+        font-size: 14pt;
+        margin-top: 10px;
+    }
+
+    /* navigation */
+    .logo {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        margin-top: -10px;
+        margin-right: 400px;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 70px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(20, 27, 37);
+        opacity: 0.8;
+        width: 80px;
+        min-width: 120px;
+        margin-top: 50px;
+        padding-right: 0px;
+        margin-right: 20px;
+        z-index: 0;
+    }
+
+
+    #menu-button {
+        position: relative;
+        display: block;
+        border-color: transparent;
+        text-transform: uppercase;
+        font-size: 14pt;
+        color: rgb(235, 232, 222);
+        background-color: rgb(20, 27, 37);
+        opacity: 1;
+        width: 40%;
+        height: 50px;
+        margin-top: -56px;
+        margin-right: -4px;
+    }
+
+    button+.menu {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    button.menu-open+.menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* service */
+    .service-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .col1 {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .col2 {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .col3 {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .col4 {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .service-description {
+        width: 70%;
+        padding: 20px 20px 30px;
+        margin-top: -100px;
+        text-align: center;
+        font-size: 16pt;
+    }
+
+
+    /* about block */
+    .about {
+        width: 100%;
+        height: auto;
+    }
+
+    .image-about {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .description-about {
+        width: 90%;
+        margin-left: 0%;
+        margin-top: -270px;
+        margin-bottom: 60px;
+    }
+
+    .title-about {
+        width: 100%;
+        justify-content: left;
+        text-align: left;
+        margin-left: 0%;
+    }
+
+    .text-about {
+        width: 100%;
+        font-size: 14pt;
+        text-align: left;
+    }
+
+
+    /* testimonial block */
+    .box-testimonial {
+        width: 100%;
+        float: none;
+    }
+
+    .text-testimonial {
+        font-size: 14pt;
+    }
+
+    .customer-info {
+        font-size: 14pt;
+    }
+
+    /* footer */
+    #footer {
+        width: 100%;
+    }
+
+    .col5 {
+        /*display: none;*/
+        width: 80%;
+        margin-left: 0%;
+    }
+
+    .social-1 {
+        margin-left: 40px;
+        margin-top: -4px;
+    }
+
+    .social-2 {
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+
+    .social-3 {
+        margin-left: 20px;
+        margin-top: -4px;
+    }
+
+    .col6 {
+        width: 100%;
+        float: left;
+        margin-left: 0%;
+    }
+
+    .col7 {
+        width: 100%;
+        float: left;
+        margin-left: 0%;
+    }
+
+    .col8 {
+        width: 80%;
+        float: left;
+        margin-left: 0%;
+    }
+
+    .text-footer {
+        font-size: 14pt;
+    }
+
+    .links {
+        font-size: 14pt;
+    }
+}
